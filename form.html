@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="Main.css">
+  <nav>
+    <ul>
+      <li> <a href="indexpage.html">Home</a></li>
+      <li><a href="Main.html">Road Map</a></li>
+      <li><a href="/form.html">Registration Form</a></li>
+      <li><a href="https://www.iti.gov.eg/">Contact</a></li>
+      <li><img src="ITI_logo.png" alt=logo></li>
+    </ul>
+  </nav>
+</head>
+
+<body>
+  <table>
+    <caption>Registration - Create Account</caption>
+    <thead>
+      <tr>
+        <th colspan="2">Field marked with<span class="required">*</span> are compulsory fields</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="required">*</span>Your Name</td>
+        <td><input type="text" name="Your Name" required></td>
+      </tr>
+      <tr>
+        <td><span class="required">*</span>E-Mail ID</td>
+        <td><input type="email" name="E-Mail ID" required></td>
+      </tr>
+      <tr>
+        <td>Alternate E-Mail ID</td>
+        <td><input type="email" name="Alternate E-Mail ID" required></td>
+      </tr>
+
+      <tr>
+        <td>Mobile Phone</td>
+        <td><input type="tel" name="Mobile Phone"></td>
+      </tr>
+
+      <tr>
+        <td><span class="required">*</span>Your Postal Address</td>
+        <td><textarea name="Your Postal Address"></textarea> </td>
+      </tr>
+      <tr>
+        <td><span class="required">*</span>Country</td>
+        <td>
+          <select name="Country" required>
+            <option value="">-----Select One-----</option>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="USA">USA</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><span class="required">*</span>Password</td>
+        <td><input type="password" name="password" required></td>
+      </tr>
+      <tr>
+        <td><span class="required">*</span>Confirm Password</td>
+        <td><input type="password" name="confirm_password" required></td>
+      </tr>
+      <tr>
+        <td>Date of Birth</td>
+        <td><input type="date" name="date_of_birth" required></td>
+      </tr>
+
+
+      <!-- 
+      <tr>
+        <td colspan="2">
+
+          I accept the terms of use<span class="required">*</span>
+          <input type="checkbox" name="accept_terms" required>
+        </td>
+
+      </tr> -->
+    </tbody>
+    <!-- <tfoot>
+      <tr>
+        <td colspan="2">
+
+          <button class="winxp-button">Click me</button>
+          <button class="winxp-button">Click me</button>
+        </td>
+      </tr>
+    </tfoot> -->
+  </table>
+
+  <div class="button-container">
+    <input type="checkbox" name="accept_terms" required>
+    I accept the terms of use
+
+
+  </div>
+  <div class="button-container">
+    <button class="button">Continue</button>
+    <button class="button">Register</button>
+
+  </div>
+  <hr>
+  <footer class="footer">
+    Copyright 2021 by Khaled Essam &#174;. All Rights Reserved
+  </footer>
+</body>
+
+</html>
